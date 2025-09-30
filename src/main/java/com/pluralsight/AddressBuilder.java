@@ -16,20 +16,18 @@ public class AddressBuilder {
         System.out.println("Billing State:");
         billingAddress.append(addressScanner.nextLine()).append(" ");
         System.out.println("Billing Zip:");
-        billingAddress.append(addressScanner.nextLine()).append("\n");
+        billingAddress.append(addressScanner.nextLine()).append("\n").append("\n");
         System.out.println("Shipping Street:");
         billingAddress.append("Shipping address: \n").append(addressScanner.nextLine()).append("\n");
         System.out.println("Shipping City:");
-        billingAddress.append(addressScanner.nextLine());
+        billingAddress.append(addressScanner.nextLine()).append(", ");
         System.out.println("Shipping State:");
-        billingAddress.append(addressScanner.nextLine());
+        billingAddress.append(addressScanner.nextLine()).append(" ");
         System.out.println("Shipping Zip:");
         billingAddress.append(addressScanner.nextLine());
 
         String addressInformation = billingAddress.toString();
         System.out.println(addressInformation);
-
-
 
     }
 }
